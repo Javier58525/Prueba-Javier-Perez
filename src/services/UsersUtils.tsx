@@ -1,4 +1,4 @@
-import { CatFactsResponse, Catfacth, RandomUserResponse, User } from './Interfaces.tsx';
+import { CatFactsResponse, Catfacth, RandomUserResponse, User } from '../models/UsersModels.tsx';
 
 export const fetchGetUsers = async () => {
     const api = 'https://randomuser.me/api/?results=20';

@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
-import { fetchGetUsers, fetchGetcatfacth, completeData } from './utils.js';
-import { RandomUserResponse, CatFactsResponse, MixedData } from './Interfaces.tsx';
+import { fetchGetUsers, fetchGetcatfacth, completeData } from './services/UsersUtils.js';
+import { RandomUserResponse, CatFactsResponse, MixedData } from './models/UsersModels.tsx';
 function App() {
 
   //Se hacen los llamados a las APIs
