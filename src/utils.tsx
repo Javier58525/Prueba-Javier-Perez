@@ -26,14 +26,11 @@ export const completeData = (catFactsData: CatFactsResponse, usersData: RandomUs
     }
 
     if (catFactsData.data.length >= usersData.results.length) {
-
-      console.log('Paco: mixdata if');
       return catFactsData.data.map((catFact: Catfacth, index: number) => ({
         catFact: catFact.fact,
         user: usersData.results[index % usersData.results.length]
       }));
     } else {
-      console.log('Paco: mixdata else');
       return usersData.results.map((user: User, index: number) => ({
         catFact: catFactsData.data[index % catFactsData.data.length].fact,
         user: user
